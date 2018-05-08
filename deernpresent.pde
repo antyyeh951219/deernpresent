@@ -68,12 +68,12 @@ void setup() {
   title.play();
   title.loop();
 
-  movie = new Movie(this, "opening.mp4");
-  movie.play();
+  //movie = new Movie(this, "opening.mp4");
+  //movie.play();
 }
 
-void movieEvent(Movie movie) {
-  movie.read();
+/*void movieEvent(Movie movie) {
+  movie.read();*/
 }
 
 void initGame() {
@@ -105,7 +105,7 @@ void draw() {
 
   switch(gameState) {
 
-  case OPENING_MOTION:
+  /*case OPENING_MOTION:
     image(movie, 0, 0);
 
     if (frameCount >396) {
@@ -118,7 +118,7 @@ void draw() {
         }
       }
     }
-    break;
+    break;*/
 
   case LEVEL1 :
     //bg,
