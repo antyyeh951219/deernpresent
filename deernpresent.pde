@@ -4,11 +4,11 @@ PImage gift3;
 PImage track;
 PFont font;
 import ddf.minim.*;
-import processing.video.*;
+//import processing.video.*;
 boolean gift_isAlive = true;
 
 final int GAME_START = 0, OPENING_MOTION = 1, LEVEL1= 2, LEVEL2 =  3, LEVEL3 = 4, GAME_WIN = 5, GAME_LOSE = 6, ONE_TWO=7, TWO_THREE=8 ;
-int gameState = 1;
+int gameState = 2;
 final int ITEM_SIZE = 60;
 int giftHealth = 20;
 int score = 0;
@@ -25,7 +25,7 @@ Chimney chimney;
 Fire fire;
 Drop drop[] = new Drop[50];
 int giftCounter;
-Movie movie;
+//Movie movie;
 Minim minim;
 AudioPlayer title;
 AudioSample bgm, gameoverSound, ttm, gameWinSound, hoho, birdSound, rain, giftBurnSound, startSound, giftDropSound, giftEatSound, levelPassSound;
@@ -68,13 +68,13 @@ void setup() {
   title.play();
   title.loop();
 
-  //movie = new Movie(this, "opening.mp4");
+  //movie = new Movie(this, "opening.mov");
   //movie.play();
 }
 
 /*void movieEvent(Movie movie) {
-  movie.read();*/
-}
+  movie.read();
+}*/
 
 void initGame() {
   gameTimer = GAME_INIT_TIMER;
