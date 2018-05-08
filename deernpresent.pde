@@ -68,7 +68,7 @@ void setup() {
   title.play();
   title.loop();
 
-  movie = new Movie(this, "opening.m");
+  movie = new Movie(this, "opening.mp4");
   movie.play();
 }
 
